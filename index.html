@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My GBA Emulator</title>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #111;
+    }
+    iframe {
+      border: none;
+      width: 960px;
+      height: 720px;
+    }
+  </style>
+</head>
+<body>
+  <!--
+    EMBEDDING EMULATORJS
+    -------------------------------------------
+    - Replace YOUR-USERNAME with your GitHub username
+    - Replace emulator-site with your repo name
+    - Replace sample.gba with your ROM filename
+
+    Example structure:
+    /emulator-site
+      ├── index.html
+      └── /data
+           └── sample.gba
+  -->
+  <iframe 
+    src="https://emulatorjs.com/loader.html#game=https://github.com/Deadlyghost-arch/emerald.git//emulator-site/data/Super Mario World (USA).sfc" 
+    allowfullscreen>
+  </iframe>
+</body>
+</html>
